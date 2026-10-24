@@ -69,3 +69,7 @@ h1 em,h2 em{font-style:normal}
 /* Center homepage introduction and its action links below the Iris banner. */
 .technical-hero:has(.iris-hero-banner) .intro{margin-left:auto;margin-right:auto;text-align:center}
 .technical-hero:has(.iris-hero-banner) .actions{justify-content:center}
+
+/* Fix Iris hero: override the technical h1 rule and constrain artwork. */
+.technical-hero h1.visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important;font-size:1px!important;line-height:1!important}
+.technical-hero img.iris-hero-banner{display:block;width:100%!important;max-width:100%!important;height:auto!important;object-fit:contain;box-sizing:border-box}
